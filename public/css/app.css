@@ -1,0 +1,190 @@
+/* 北海道地方 */
+.hokkaido {
+    fill: #3cb371;
+    /* 緑色 */
+}
+
+/* 東北地方 */
+.tohoku {
+    fill: #6a5acd;
+    /* 紫色 */
+}
+
+/* 関東地方 */
+.kanto {
+    fill: #ffd700;
+    /* 黄色 */
+}
+
+/* 中部地方 */
+.chubu {
+    fill: #ff8c00;
+    /* オレンジ色 */
+}
+
+/* 近畿地方 */
+.kinki {
+    fill: #dc143c;
+    /* 赤色 */
+}
+
+/* 中国地方 */
+.chugoku {
+    fill: #1e90ff;
+    /* 青色 */
+}
+
+/* 四国地方 */
+.shikoku {
+    fill: #ff69b4;
+    /* ピンク色 */
+}
+
+/* 九州・沖縄地方 */
+.kyusyu-okinawa {
+    fill: #8b4513;
+    /* 茶色 */
+}
+
+/* SVGのサイズを調整するためのCSS */
+.japan-map-container {
+    width: 45%;
+    margin: 0 auto;
+    background-color: #188EDC;
+}
+
+/* ホバー時のスタイル設定 */
+.prefecture:hover {
+    filter: brightness(80%);
+    /* ホバー時に色を20%暗くする */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+}
+
+th,
+td {
+    width: 100px;
+    /* 固定幅 */
+    height: 70px;
+    /* 固定高さ */
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+.table-gap {
+    margin-top: 60px;
+    /* 表間のスペース */
+}
+
+.icon-hour {
+    font-size: 60px;
+}
+
+body {
+    background-color: rgb(123, 178, 223);
+    background-size: 110% 110%;
+    /* 画像を画面全体にフィット */
+    background-position: center;
+    /* 画像の中央を表示 */
+    background-repeat: no-repeat;
+    /* 画像の繰り返しを防止 */
+    background-attachment: fixed;
+    /* スクロールしても背景を固定 */
+}
+
+body,
+html {
+    height: 100%;
+    /* ページ全体の高さを設定 */
+    width: 100%;
+    margin: 0;
+    /* ページの余白をなくす */
+}
+
+.prefecture-h1 {
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 5px;
+    padding: 3px 12px;
+}
+
+.daily-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.date-h2 {
+    font-weight: bold;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    border: solid 5px;
+    padding: 3px 12px;
+}
+
+.weather-daily {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 5px;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.daily-icon {
+    font-size: 100px;
+}
+
+.daily-h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.return-button {
+    background-color: #18c8a8;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.return-button:hover {
+    filter: brightness(80%);
+}
+
+.select-days {
+    font-size: 32px;
+    font-weight: bold;
+    background-color: rgb(123, 178, 223);
+    border: none;
+    min-width: 100px;
+    width: auto;
+    color: red;
+}
