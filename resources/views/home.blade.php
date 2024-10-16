@@ -30,7 +30,7 @@
         {!! file_get_contents(public_path('images/japan-map.svg')) !!}
     </div>
 
-    <script src="{{ asset('/js/home.js') }}"></script>
+    <script type="module" src="{{ asset('/js/home.js') }}"></script>
 </body>
 
 </html>

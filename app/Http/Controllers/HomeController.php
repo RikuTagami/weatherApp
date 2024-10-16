@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class Home {
+class HomeController {
     public function results()
     {
         return view('home', []);
