@@ -4,26 +4,27 @@ namespace App\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use App\Consts\SearchConst;
 
-class Search
+class SearchService
 {
     public function getWeatherData($lat, $lng, $date)
     {
         try {
             $http_client = new Client();
-            $weather_url = 'https://api.open-meteo.com/v1/forecast';
+            $weather_url = SearchConst::$pro['url'];
             $response = $http_client->request('GET', $weather_url, [
                 'headers' => [
-                    'Accept' => 'application/json',
+                    'Accept' => SearchConst::$pro['Accept'],
                 ],
                 'query' => [
-                    'timezone' => 'Asia/Tokyo',
+                    'timezone' => SearchConst::$pro['timezone'],
                     'latitude' => $lat,
                     'longitude' => $lng,
                     'start_date' => $date,
                     'end_date' => $date,
-                    'hourly' => 'weather_code',
-                    'daily' => 'weather_code',
+                    'hourly' => SearchConst::$pro['hourly'],
+                    'daily' => SearchConst::$pro['daily'],
                 ],
                 'verify' => false,
             ]);
